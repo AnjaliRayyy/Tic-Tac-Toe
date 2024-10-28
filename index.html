@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <title>Tic-Tac-Toe Game</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>TicTacToe.com</li>
+        </ul>
+    </nav>
+
+    <div class="gameContainer">
+        <div class="container">
+            <div class="box bl-0 bt-0"><span class="content-box"></span></div>
+            <div class="box bt-0"><span class="content-box"></span></div>
+            <div class="box br-0 bt-0"><span class="content-box"></span></div>
+            <div class="box bl-0"><span class="content-box"></span></div>
+            <div class="box"><span class="content-box"></span></div>
+            <div class="box br-0"><span class="content-box"></span></div>
+            <div class="box bl-0 bb-0"><span class="content-box"></span></div>
+            <div class="box bb-0"><span class="content-box"></span></div>
+            <div class="box bb-0 br-0"><span class="content-box"></span></div>
+        </div>
+        <div class="gameInfo">
+            <h1>Welcome to MyTicTacToe </h1>
+            <div class="info">
+                <div id="turn">Turn for X</div>
+                <span><button id="reset">Reset</button></span>
+            </div>
+            <div class="imgbox"><img src="mochi-peachcat-cute-cat.gif" alt="" width="70%"></div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>

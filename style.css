@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Crimson Text", serif;
+}
+nav{
+    background-color: blueviolet;
+    color: white;
+    height : 70px;
+    font-size: 30px;
+
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+}
+
+.gameContainer{
+    /* background-color: yellow; */
+    display : flex;
+    justify-content: center;
+    margin-top : 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+
+.box{
+    border : 2px solid black;
+    font-size: 8vw;
+    cursor : pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background: rgb(241, 229, 241);
+}
+.gameInfo{
+    padding : 0 34px;
+}
+.imgbox>img{
+ width:0;
+ transition: width 2s ease-in-out;
+}
+.gameInfo>h1, .info, .imgbox, #turn, #reset{
+    margin : 5px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+.br-0{
+    border-right : 0
+}
+.bl-0{
+    border-left : 0
+}
+.bt-0{
+    border-top : 0
+}
+.bb-0{
+    border-bottom : 0
+}
+#reset{
+    padding: 0px 9px;
+  background-color: #b980d9;
+  color: #fffbf9;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor : pointer;
+}
+
+@media screen and (max-width : 950px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo>h1{
+        font-size: 1.5rem;
+    }
+    .box{
+        font-size: 10vw;
+    }
+    .container{
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+        margin: 3vh;
+    }
+}
